@@ -80,7 +80,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = [
     "https://orcamento-comercial-production-ee0c.up.railway.app",
-    "https://django-rest-starter-production-43a2.up.railway.app",
+    "https://django-rest-starter-production-2f87.up.railway.app",
     "http://localhost:3000",
     "http://localhost:8080",
 ]
