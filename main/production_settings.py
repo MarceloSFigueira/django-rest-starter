@@ -47,16 +47,17 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",              
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
 
 ROOT_URLCONF = "main.urls"
 
@@ -80,17 +81,16 @@ WSGI_APPLICATION = "main.wsgi.application"
 
 
 CORS_ALLOW_CREDENTIALS = True 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000', 
-    'http://localhost:8080',
-    'https://orcamento-comercial-production-ee0c.up.railway.app'
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:8080",
+    "https://orcamento-comercial-production-ee0c.up.railway.app",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:3000',  
-    'http://localhost:8080',  
-    'https://orcamento-comercial-production-ee0c.up.railway.app',
-    'https://django-rest-starter-production-2f87.up.railway.app',
+    "https://orcamento-comercial-production-ee0c.up.railway.app",
+    "http://localhost:3000",
+    "http://localhost:8080",
 ]
 
 CORS_ALLOWED_ORIGINS = [
