@@ -83,13 +83,13 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000', 
     'http://localhost:8080',
-    'https://orcamento-comercial-production.up.railway.app'
+    'https://orcamento-comercial-production-ee0c.up.railway.app'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',  
     'http://localhost:8080',  
-    'https://orcamento-comercial-production.up.railway.app',
+    'https://orcamento-comercial-production-ee0c.up.railway.app',
     'https://django-rest-starter-production-4bc9.up.railway.app',
 ]
 
