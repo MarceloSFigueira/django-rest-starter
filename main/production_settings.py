@@ -82,9 +82,8 @@ WSGI_APPLICATION = "main.wsgi.application"
 
 CORS_ALLOW_CREDENTIALS = True 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://localhost:8080",
     "https://orcamento-comercial-production-ee0c.up.railway.app",
+    "http://localhost:3000",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
