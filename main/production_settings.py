@@ -93,6 +93,12 @@ CSRF_TRUSTED_ORIGINS = [
     'https://django-rest-starter-production-4bc9.up.railway.app',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000', 
+    'http://localhost:8080',
+    'https://orcamento-comercial-production-ee0c.up.railway.app',
+]
+
 CSRF_COOKIE_SAMESITE = 'Lax'
 
 
