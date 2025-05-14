@@ -71,17 +71,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "main.wsgi.application"
 
-CORS_ALLOW_CREDENTIALS = True 
+CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "https://orcamento-comercial-production-ee0c.up.railway.app",
     "http://localhost:3000",
+    "http://localhost:8080",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://orcamento-comercial-production-ee0c.up.railway.app",
+    "https://django-rest-starter-production-43a2.up.railway.app",
     "http://localhost:3000",
     "http://localhost:8080",
-    "https://django-rest-starter-production-2f87.up.railway.app"
 ]
 
 CSRF_COOKIE_SAMESITE = 'Lax'
