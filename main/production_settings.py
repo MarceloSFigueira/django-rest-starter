@@ -141,9 +141,10 @@ DATABASES = {
         "USER": "postgres",
         "PASSWORD": "URyZCrMUadvpiKGRbSNxiHrCOzfZLQwB",
         "HOST": "shuttle.proxy.rlwy.net",
-        "PORT": "5432",
+        "PORT": "19579",
     }
 }
+
 
 
 # Password validation
